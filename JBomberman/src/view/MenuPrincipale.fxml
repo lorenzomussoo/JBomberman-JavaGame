@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerMP">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="680.0" onMouseEntered="#enter" pickOnBounds="true">
+         <image>
+            <Image url="@../images/background/1.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="656.0" layoutX="19.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/text/title.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="197.0" layoutX="265.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sprites/bomberMan/360_F_486606750_qMO0l50jkp9gt7CjdEQOdhIky4UyoBIF.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="65.0" layoutX="601.0" layoutY="526.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sprites/bomberMan/528079.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="nuovaPartita" layoutX="178.0" layoutY="268.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#nuoviDati" onKeyPressed="#gestioneTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Nuova partita" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="bomb3" fitHeight="83.0" fitWidth="94.0" layoutX="72.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/sprites/bombs/8081698-pixel-art-bomba-dinamite-granata-illustrazione-gratuito-vettoriale.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="nuova" layoutX="227.0" layoutY="329.0" onKeyPressed="#gestioneTastiera" visible="false">
+         <children>
+            <Label prefHeight="17.0" prefWidth="357.0" text="Inserisci un nickname:" />
+            <TextField fx:id="nick1" layoutX="131.0" layoutY="-4.0" prefHeight="26.0" prefWidth="143.0" />
+            <Button fx:id="okay1" layoutX="314.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#inizia" prefHeight="23.0" prefWidth="54.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="OK">
+               <font>
+                  <Font name="04b 30" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Button fx:id="caricaPartita" layoutX="178.0" layoutY="379.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#caricaDati" onKeyPressed="#gestioneTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Carica partita" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="178.0" layoutY="498.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logout" onKeyPressed="#gestioneTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Esci dal gioco" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="bomb1" fitHeight="83.0" fitWidth="94.0" layoutX="72.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sprites/bombs/8081698-pixel-art-bomba-dinamite-granata-illustrazione-gratuito-vettoriale.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bomb2" fitHeight="83.0" fitWidth="94.0" layoutX="72.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/sprites/bombs/8081698-pixel-art-bomba-dinamite-granata-illustrazione-gratuito-vettoriale.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="carica" layoutX="227.0" layoutY="444.0" onKeyPressed="#gestioneTastiera" visible="false">
+         <children>
+            <Label layoutX="-12.0" layoutY="1.0" prefHeight="17.0" prefWidth="377.0" text="Inserisci il tuo nickname:" />
+            <TextField fx:id="nick2" layoutX="131.0" layoutY="-4.0" prefHeight="26.0" prefWidth="143.0" />
+            <Button fx:id="okay2" layoutX="313.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#inizia" prefHeight="23.0" prefWidth="53.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="OK" visible="true">
+               <font>
+                  <Font name="04b 30" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

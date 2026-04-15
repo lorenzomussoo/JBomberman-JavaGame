@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="680.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerLiv">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="680.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/background/1.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="656.0" layoutX="19.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/text/title.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="title" layoutX="265.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="150.0" text="Livelli">
+         <font>
+            <Font name="04b 30" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="bottoneLv1" layoutX="26.0" layoutY="186.0" mnemonicParsing="false" onAction="#Lv1" onKeyPressed="#gestisciTastiera" prefHeight="58.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="immagineLv1" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stage/void/stage%201.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneLv2" disable="true" layoutX="186.0" layoutY="186.0" mnemonicParsing="false" onAction="#Lv2" onKeyPressed="#gestisciTastiera" prefHeight="90.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="immagineLv2" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stage/void/stage%202.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.4" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneLv3" disable="true" layoutX="356.0" layoutY="186.0" mnemonicParsing="false" onAction="#Lv3" onKeyPressed="#gestisciTastiera" prefHeight="56.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="immagineLv3" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stage/void/stage%203.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.4" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneLv4" disable="true" layoutX="517.0" layoutY="186.0" mnemonicParsing="false" onAction="#Lv4" onKeyPressed="#gestisciTastiera" prefHeight="77.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="immagineLv4" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stage/void/stage%204.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.4" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneLv5" disable="true" layoutX="26.0" layoutY="357.0" mnemonicParsing="false" onAction="#Lv5" onKeyPressed="#gestisciTastiera" prefHeight="46.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="immagineLv5" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stage/void/stage%205.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.4" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneLv6" disable="true" layoutX="186.0" layoutY="357.0" mnemonicParsing="false" onAction="#Lv6" onKeyPressed="#gestisciTastiera" prefHeight="53.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="immagineLv6" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stage/void/stage%206.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.4" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneLv7" disable="true" layoutX="356.0" layoutY="357.0" mnemonicParsing="false" onAction="#Lv7" onKeyPressed="#gestisciTastiera" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="immagineLv7" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stage/void/stage%207.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.4" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneLv8" disable="true" layoutX="517.0" layoutY="357.0" mnemonicParsing="false" onAction="#Lv8" onKeyPressed="#gestisciTastiera" prefHeight="77.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="immagineLv8" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stage/void/stage%208.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.4" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="l1" layoutX="32.0" layoutY="294.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="125.0" text="Livello 1">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="l6" layoutX="189.0" layoutY="467.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="131.0" text="Livello 6">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="l5" layoutX="29.0" layoutY="467.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="131.0" text="Livello 5">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="l4" layoutX="520.0" layoutY="294.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="131.0" text="Livello 4">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="359.0" layoutY="294.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="131.0" text="Livello 3">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="189.0" layoutY="294.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="131.0" text="Livello 2">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="l7" layoutX="359.0" layoutY="467.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="131.0" text="Livello 7">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="l8" layoutX="520.0" layoutY="467.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="131.0" text="Livello 8">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="b1" layoutX="549.0" layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="73.0" text="BOSS">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="b2" layoutX="549.0" layoutY="314.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="73.0" text="BOSS">
+         <font>
+            <Font name="04b 30" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="frecciaButton" layoutX="590.0" layoutY="526.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="70.0" prefWidth="82.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="freccia" fitHeight="68.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/background/pink.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

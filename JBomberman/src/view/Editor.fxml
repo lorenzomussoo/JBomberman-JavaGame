@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="680.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerEditor">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="680.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/background/1.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="656.0" layoutX="20.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/text/title.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="title" layoutX="102.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="502.0" text="Seleziona Salvataggio">
+         <font>
+            <Font name="04b 30" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="bottoneSlot1" layoutX="27.0" layoutY="199.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Lv1" onKeyPressed="#gestisciTastiera" prefHeight="101.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;">
+         <graphic>
+            <ImageView fx:id="im1" fitHeight="84.0" fitWidth="87.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/text/piu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneSlot2" layoutX="186.0" layoutY="199.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Lv2" onKeyPressed="#gestisciTastiera" prefHeight="101.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;">
+         <graphic>
+            <ImageView fx:id="im2" fitHeight="84.0" fitWidth="87.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/text/piu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneSlot3" layoutX="353.0" layoutY="199.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Lv3" onKeyPressed="#gestisciTastiera" prefHeight="101.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;">
+         <graphic>
+            <ImageView fx:id="im3" fitHeight="84.0" fitWidth="87.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/text/piu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneSlot4" layoutX="517.0" layoutY="199.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Lv4" onKeyPressed="#gestisciTastiera" prefHeight="101.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;">
+         <graphic>
+            <ImageView fx:id="im4" fitHeight="84.0" fitWidth="87.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/text/piu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneSlot5" layoutX="26.0" layoutY="366.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Lv5" onKeyPressed="#gestisciTastiera" prefHeight="101.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;">
+         <graphic>
+            <ImageView fx:id="im5" fitHeight="84.0" fitWidth="87.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/text/piu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneSlot6" layoutX="186.0" layoutY="366.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Lv6" onKeyPressed="#gestisciTastiera" prefHeight="101.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;">
+         <graphic>
+            <ImageView fx:id="im6" fitHeight="84.0" fitWidth="87.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/text/piu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneSlot7" layoutX="353.0" layoutY="366.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Lv7" onKeyPressed="#gestisciTastiera" prefHeight="101.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;">
+         <graphic>
+            <ImageView fx:id="im7" fitHeight="84.0" fitWidth="87.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/text/piu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bottoneSlot8" layoutX="517.0" layoutY="366.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Lv8" onKeyPressed="#gestisciTastiera" prefHeight="101.0" prefWidth="137.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;">
+         <graphic>
+            <ImageView fx:id="im8" fitHeight="84.0" fitWidth="87.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/text/piu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="frecciaButton" layoutX="590.0" layoutY="526.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="70.0" prefWidth="82.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="freccia" fitHeight="68.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/background/pink.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="l1" layoutX="49.0" layoutY="315.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="92.0" text="Slot 1">
+         <font>
+            <Font name="04b 30" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="205.0" layoutY="315.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="99.0" text="Slot 2">
+         <font>
+            <Font name="04b 30" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="372.0" layoutY="315.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="99.0" text="Slot 3">
+         <font>
+            <Font name="04b 30" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="l4" layoutX="537.0" layoutY="315.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="99.0" text="Slot 4">
+         <font>
+            <Font name="04b 30" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="l5" layoutX="45.0" layoutY="482.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="99.0" text="Slot 5">
+         <font>
+            <Font name="04b 30" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="l6" layoutX="205.0" layoutY="482.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="99.0" text="Slot 6">
+         <font>
+            <Font name="04b 30" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="l7" layoutX="372.0" layoutY="482.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="99.0" text="Slot 7">
+         <font>
+            <Font name="04b 30" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="l8" layoutX="536.0" layoutY="482.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="99.0" text="Slot 8">
+         <font>
+            <Font name="04b 30" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

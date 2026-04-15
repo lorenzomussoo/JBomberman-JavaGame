@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="680.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerMS">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="680.0" onMouseEntered="#enter" pickOnBounds="true">
+         <image>
+            <Image url="@../images/background/1.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="656.0" layoutX="19.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/text/title.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="giocaButton" layoutX="178.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gioca" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Gioca" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="opzioniButton" layoutX="178.0" layoutY="491.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#opzioni" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Opzioni" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="profiloButton" layoutX="178.0" layoutY="412.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#profilo" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Profilo" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="editorButton" layoutX="178.0" layoutY="335.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#editor" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="324.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Editor" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="bomb1" fitHeight="83.0" fitWidth="94.0" layoutX="79.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sprites/bombs/8081698-pixel-art-bomba-dinamite-granata-illustrazione-gratuito-vettoriale.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="197.0" layoutX="265.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sprites/bomberMan/360_F_486606750_qMO0l50jkp9gt7CjdEQOdhIky4UyoBIF.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bomb2" fitHeight="83.0" fitWidth="94.0" layoutX="79.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/sprites/bombs/8081698-pixel-art-bomba-dinamite-granata-illustrazione-gratuito-vettoriale.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bomb3" fitHeight="83.0" fitWidth="94.0" layoutX="79.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/sprites/bombs/8081698-pixel-art-bomba-dinamite-granata-illustrazione-gratuito-vettoriale.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bomb4" fitHeight="83.0" fitWidth="94.0" layoutX="79.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/sprites/bombs/8081698-pixel-art-bomba-dinamite-granata-illustrazione-gratuito-vettoriale.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="frecciaButton" layoutX="590.0" layoutY="526.0" mnemonicParsing="false" onAction="#back" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="freccia" fitHeight="71.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/background/pink.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

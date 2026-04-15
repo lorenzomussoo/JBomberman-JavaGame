@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="680.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerOpz">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="680.0" layoutX="2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/background/1.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="656.0" layoutX="19.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/text/title.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="197.0" layoutX="266.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sprites/bomberMan/360_F_486606750_qMO0l50jkp9gt7CjdEQOdhIky4UyoBIF.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="title" layoutX="264.0" layoutY="268.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="156.0" text="Opzioni">
+         <font>
+            <Font name="04b 30" size="29.0" />
+         </font>
+      </Label>
+      <Group fx:id="comandiMenu" layoutX="175.0" layoutY="336.0">
+         <children>
+            <Label fx:id="com" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="167.0" text="Comandi">
+               <font>
+                  <Font name="04b 30" size="23.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="mouse" layoutX="195.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sceltaComandi" onKeyPressed="#gestisciTastiera" prefHeight="20.0" prefWidth="167.0" text="Mouse">
+               <font>
+                  <Font name="04b 30" size="17.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="tastiera" layoutX="195.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#sceltaComandi" onKeyPressed="#gestisciTastiera" prefHeight="20.0" prefWidth="167.0" selected="true" text="Tastiera">
+               <font>
+                  <Font name="04b 30" size="17.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Group>
+      <Button fx:id="frecciaButton" layoutX="590.0" layoutY="526.0" mnemonicParsing="false" onAction="#back" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="freccia" fitHeight="71.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/background/pink.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="salvaButton" layoutX="271.0" layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#save" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="143.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Salva" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="78.0" layoutY="405.0" prefHeight="20.0" prefWidth="522.0" text="Per utilizzare il mouse clicca e tieni premuto per muovere Bomberman nella direzione desiderata," />
+      <Label layoutX="285.0" layoutY="425.0" text=" rilascia per fermarlo" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

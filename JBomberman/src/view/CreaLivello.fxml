@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="sfondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="680.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerCreaLiv">
+   <children>
+      <MenuBar fx:id="menu" prefHeight="88.0" prefWidth="680.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="bottoneSalva" mnemonicParsing="false" onAction="#salva" text="Salva" />
+                  <MenuItem fx:id="bottoneGioca" mnemonicParsing="false" onAction="#gioca" text="Gioca" />
+                  <MenuItem fx:id="bottoneIndietro" mnemonicParsing="false" onAction="#back" text="Torna ai livelli" />
+               </items></Menu>
+            <Menu disable="true" mnemonicParsing="false" />
+            <Menu disable="true" mnemonicParsing="false" />
+            <Menu disable="true" mnemonicParsing="false" />
+            <Menu disable="true" mnemonicParsing="false" />
+          <Menu fx:id="mappa" mnemonicParsing="false" text="Mappa">
+            <items>
+              <MenuItem fx:id="stage1m" mnemonicParsing="false" onAction="#cambiaStage1" text="Stage 1" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="stage2m" mnemonicParsing="false" onAction="#cambiaStage2" text="Stage 2" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="stage3m" mnemonicParsing="false" onAction="#cambiaStage3" text="Stage 3" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="stage4m" mnemonicParsing="false" onAction="#cambiaStage4" text="Stage 4" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="stage5m" mnemonicParsing="false" onAction="#cambiaStage5" text="Stage 5" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="stage6m" mnemonicParsing="false" onAction="#cambiaStage6" text="Stage 6" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="stage7m" mnemonicParsing="false" onAction="#cambiaStage7" text="Stage 7" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="stage8m" mnemonicParsing="false" onAction="#cambiaStage8" text="Stage 8" />
+            </items>
+          </Menu>
+          <Menu fx:id="blocchi" mnemonicParsing="false" text="Blocchi">
+            <items>
+              <MenuItem fx:id="menuBlocco" mnemonicParsing="false" onAction="#sceltaEntita" text="Blocco" />
+            </items>
+          </Menu>
+          <Menu fx:id="nemici" mnemonicParsing="false" onAction="#sceltaEntita" text="Nemici">
+            <items>
+              <MenuItem fx:id="pakupa" mnemonicParsing="false" onAction="#sceltaEntita" text="Pakupa" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="bakuda" mnemonicParsing="false" onAction="#sceltaEntita" text="Bakuda" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="cuppen" mnemonicParsing="false" onAction="#sceltaEntita" text="Cuppen" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="puropen" mnemonicParsing="false" onAction="#sceltaEntita" text="Puropen" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="senshiyan" mnemonicParsing="false" onAction="#sceltaEntita" text="Senshiyan" />
+            </items>
+          </Menu>
+            <Menu fx:id="boss" mnemonicParsing="false" onAction="#sceltaEntita" text="Boss">
+               <items>
+                  <MenuItem fx:id="bigaron" mnemonicParsing="false" onAction="#sceltaEntita" text="Bigaron" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="clownMask" mnemonicParsing="false" onAction="#sceltaEntita" text="Clown Mask" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="stage" fitHeight="544.0" fitWidth="680.0" layoutY="86.0" preserveRatio="true">
+         <image>
+            <Image url="@../images/stage/void/stage%201.png" />
+         </image></ImageView>
+      <Pane fx:id="backPane" layoutX="80.0" layoutY="125.0" onMouseClicked="#handleMouseClick" prefHeight="440.0" prefWidth="520.0" />
+   </children>
+</AnchorPane>

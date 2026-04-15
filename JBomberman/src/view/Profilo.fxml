@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="680.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerProf">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="680.0" layoutX="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/background/1.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="656.0" layoutX="19.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/text/title.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="frecciaButton" layoutX="590.0" layoutY="526.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="70.0" prefWidth="82.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="freccia" fitHeight="71.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/background/pink.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="frecciaSinistra" layoutX="163.0" layoutY="302.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cambiaAvatar" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="70.0" prefWidth="82.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="sinistra" fitHeight="71.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../images/background/sx.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="frecciaDestra" layoutX="444.0" layoutY="302.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cambiaAvatar" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="70.0" prefWidth="82.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fx:id="destra" fitHeight="71.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../images/background/dx.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="title" layoutX="257.0" layoutY="148.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="168.0" text="Profilo">
+         <font>
+            <Font name="04b 30" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="statisticheButton" layoutX="230.0" layoutY="419.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#stat" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="223.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Statistiche" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="cambiaNickButton" layoutX="239.0" layoutY="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#nick" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="26.0" prefWidth="205.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="cambia nickname" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="avatar" fitHeight="75.0" fitWidth="76.0" layoutX="306.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sprites/bomberMan/white/white%20character.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="field" layoutX="261.0" layoutY="245.0" onKeyPressed="#gestisciTastiera" visible="false">
+         <children>
+            <TextField fx:id="nickname" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" />
+         </children>
+      </Group>
+      <Button fx:id="salvaButton" layoutX="268.0" layoutY="491.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#save" onKeyPressed="#gestisciTastiera" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="39.0" prefWidth="143.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="Salva" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="04b 30" size="22.0" />
+         </font>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>
