@@ -39,5 +39,6 @@ This application heavily emphasizes Object-Oriented Programming (OOP) principles
    git clone [https://github.com/yourusername/JBomberman.git](https://github.com/yourusername/JBomberman.git)
 2. Open the project in your preferred IDE (Eclipse, IntelliJ IDEA).
 3. Add the JavaFX lib folder to your project's build path and configure the VM options:
-   ```--module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml,javafx.media
+   ```bash
+   --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml,javafx.media
 4. Run the main application file from the src directory to launch the game.
