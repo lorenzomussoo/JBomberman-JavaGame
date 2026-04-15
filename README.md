@@ -1,4 +1,4 @@
-# JBomberman 💣
+# JBomberman 💣 
 
 A Java-based clone of the classic Bomberman arcade game series originally created by Hudson Soft in 1983. This project was developed as part of a University course in Programming Methodologies at Sapienza University of Rome.
 
